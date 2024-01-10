@@ -1,4 +1,4 @@
-# 💻 Weather App
+# 💻 Visualization App
 
 The following project is a Vite application developed to show weather data from an api, with the aim of creating a scalable and easy-to-maintain application based on good practices in typescript.
 
