@@ -1,0 +1,127 @@
+:root{
+  --primary-color: #42b2ac;
+  --secondary-color: #553f97;
+  --tertiary-color: #3883cb;
+
+  --primary-color-opacity: #42b2ac33;
+  --secondary-color-opacity: #553f9733;
+  --tertiary-color-opacity: #3883cb33;
+
+  --text-primary: #202124;
+  --text-secondary: rgba(32, 33, 36, 0.6);
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+body, html {
+  width: 100%;
+  height: 100dvh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  gap: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+h2, h3{
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+h3{
+  font-size: 16px;
+}
+
+.description{
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.content{
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card-item{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.card-item p{
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.bg-primary{
+  background-color: var(--primary-color-opacity);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.bg-primary p{
+  background-color: var(--primary-color);
+  color: white;
+}
+
+
+.bg-secondary{
+  background-color: var(--secondary-color-opacity);
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.bg-secondary p{
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.bg-tertiary{
+  background-color: var(--tertiary-color-opacity);
+  color: var(--tertiary-color);
+  font-weight: 500;
+}
+
+.bg-tertiary p{
+  background-color: var(--tertiary-color);
+  color: white;
+}
